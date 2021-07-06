@@ -1,4 +1,4 @@
-// import Contract from './contracts/Contract.json'
+import SimpleIPFSStore from './contracts/SimpleIPFSStore.json'
 
 const options = {
   web3: {
@@ -8,7 +8,7 @@ const options = {
       url: 'ws://127.0.0.1:7545'
     }
   },
-  // contracts: [Contract],
+  contracts: [SimpleIPFSStore],
   polls: {
     accounts: 15000
   }

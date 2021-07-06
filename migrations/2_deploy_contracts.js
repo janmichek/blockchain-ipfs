@@ -1,5 +1,5 @@
-const Contract = artifacts.require("Contract");
+const SimpleIPFSStore = artifacts.require("SimpleIPFSStore");
 
-module.exports = function(deployer) {
-  deployer.deploy(Contract);
+module.exports = function (deployer) {
+  deployer.deploy(SimpleIPFSStore);
 };

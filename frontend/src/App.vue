@@ -1,6 +1,8 @@
 <template>
   <div v-if="isDrizzleInitialized" id="app">
-    <div>Hello world</div>
+    <h2>Accounts</h2>
+    <drizzle-account units="Ether" :precision="4"/>
+    <IPFSForm/>
   </div>
   <div v-else>
     Loading
@@ -9,9 +11,12 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import IPFSForm from './IPFSForm'
+
 
   export default {
     name: 'app',
+    components: { IPFSForm },
     computed: mapGetters('drizzle', ['isDrizzleInitialized']),
   }
 </script>
