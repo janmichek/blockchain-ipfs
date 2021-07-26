@@ -1,7 +1,7 @@
 ### Drizzle IPFS
 This app will upload image to IPFS network and obtain CID of that file
 
-inspired by this tutorial
+This repository is inspired by tutorial:
 https://www.youtube.com/watch?v=NvQbphs2nco
 
 

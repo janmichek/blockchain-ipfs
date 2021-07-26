@@ -1,5 +1,5 @@
 {
-  "name": "drizzle-template-frontend",
+  "name": "blockchain-ipfs-frontend",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

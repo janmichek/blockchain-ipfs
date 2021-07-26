@@ -16,9 +16,6 @@
 
   export default {
     name: 'IPFSForm',
-    computed: {
-      ...mapGetters('drizzle', ['drizzleInstance']),
-    },
     data () {
       return {
         cid: 'Please choose a file to send to IPFS',
