@@ -1,5 +1,6 @@
-### Drizzle IPFS
-This app will upload image to IPFS network and obtain CID of that file
+### Blockchain IPFS with Drizzle
+This app will upload image to IPFS network and obtain CID of that file.
+It is also using basic Drizzle implementation.
 
 This repository is inspired by tutorial:
 https://www.youtube.com/watch?v=NvQbphs2nco
