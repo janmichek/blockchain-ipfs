@@ -7,32 +7,51 @@ https://www.youtube.com/watch?v=NvQbphs2nco
 
 
 ## Dependencies
-
 - Ganache https://www.trufflesuite.com/ganache
+- Node JS
+- Yarn
+- IPFS server  ```yarn global add ipfs```
 
 Run Ganache quickstart Workspace
 
-- IPFS server
-```yarn global add ipfs```
-
 ## Init project
+
 ### Install dependencies
 ```cd frontend```
 
 ```yarn install```
 
-### Compile contracts
-```truffle compile --reset```
-
 ### Deploy contracts to blockchain
-```truffle migrate --reset```
+```yarn deploy```
+
 
 ## Run project
+
+Run Ganache with Quickstart Workspace
+
 ```ipfs daemon```
 
 ```cd frontend```
 
 ```yarn serve```
+
+### Init Metamask account
+
+Login to Metamask
+
+Go to Ganache and copy private key of first account
+
+Open Metamask
+
+Switch to Ganache Network
+
+Click Import account
+
+Paste private key
+
+Connect Account
+
+Open app on http://localhost:8080/
 
 
 

@@ -12,8 +12,6 @@
 <script>
   import ipfs from './ipfs'
 
-  import { mapGetters } from 'vuex'
-
   export default {
     name: 'IPFSForm',
     data () {
@@ -30,17 +28,13 @@
         reader.readAsArrayBuffer(file)
         reader.onloadend = () => {
           this.$store.state.buffer = Buffer.from(reader.result)
-          console.log('this.$store.state.buffer', this.$store.state.buffer)
         }
       },
       async upload (event) {
         let ipfsResponse
         event.preventDefault()
         if (this.$store.state.buffer) {
-          console.log('this.ipfsService', this.ipfsService)
-          console.log('this.drizzleInstance', this.drizzleInstance)
           ipfsResponse = await this.ipfsService.add(this.$store.state.buffer)
-          console.log('ipfsResponse', ipfsResponse)
           this.cid = `The file CID in IPFS is: ${ipfsResponse.cid.string}`
           this.drizzleInstance
             .contracts.SimpleIPFSStore
@@ -53,9 +47,3 @@
     },
   }
 </script>
-
-<style scoped>
-  .ipfsform.vue {
-
-  }
-</style>
