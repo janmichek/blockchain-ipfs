@@ -16,18 +16,17 @@ Run Ganache quickstart Workspace
 
 ## Init project
 
+### Deploy contracts to blockchain
+
+```yarn deploy```
+
 ### Install dependencies
+
 ```cd frontend```
 
 ```yarn install```
 
-### Deploy contracts to blockchain
-```yarn deploy```
-
-
 ## Run project
-
-Run Ganache with Quickstart Workspace
 
 ```ipfs daemon```
 

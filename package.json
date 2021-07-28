@@ -7,6 +7,6 @@
   },
   "scripts": {
     "serve": "cd frontend && vue-cli-service serve",
-    "deploy": "truffle compile --reset && truffle migrate --reset"
+    "deploy": "truffle compile && truffle migrate --reset"
   }
 }

@@ -1,7 +1,9 @@
 <template>
   <div v-if="isDrizzleInitialized" id="app">
-    <h2>Accounts</h2>
-    <drizzle-account units="Ether" :precision="4"/>
+    <header>
+      Account
+      <drizzle-account units="Ether" :precision="4"/>
+    </header>
     <IPFSForm/>
   </div>
   <div v-else>
