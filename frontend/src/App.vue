@@ -1,8 +1,8 @@
 <template>
   <div v-if="isDrizzleInitialized" id="app">
     <header>
-      Account
-      <drizzle-account units="Ether" :precision="4"/>
+      <h1>IPFS DAPP</h1>
+      Account: <drizzle-account units="Ether" :precision="4"/>
     </header>
     <IPFSForm/>
   </div>
