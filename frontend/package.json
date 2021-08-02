@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@drizzle/vue-plugin": "^0.1.0",
-    "prettier": "^1.18.2",
     "simpledotcss": "^1.0.1",
     "ipfs-http-client": "^45.0.0",
     "vue": "^2.6.10",
